@@ -1,0 +1,45 @@
+.stages
+    padding: 100px 0
+    background-color: #f5f6f8
+    opacity: 0.9
+    &-wrap
+        display: flex
+        justify-content: space-between
+        text-align: center
+        & figure
+            position: relative
+            &::before
+                content: ""
+                display: block
+                position: absolute
+                top: 60px
+                height: 2px
+                background-color: rgba(#7e7b78, 0.5)
+            &:nth-child(1)::before
+                right: -101px
+                width: 171px
+            &:nth-child(2)::before
+                right: -100px
+                width: 166px
+            &:nth-child(3)::before
+                right: -92px
+                width: 159px
+            &:nth-child(4)::before
+                right: -103px
+                width: 169px
+            &:nth-child(5)::before
+                right: -100px
+                width: 164px
+            & img
+                display: block
+                margin: 0 auto 25px
+            & figcaption
+                & h5
+                    +semibold
+                    margin-bottom: 25px
+                    font-size: 18px
+                    font-weight: 400
+                & p
+                    max-width: 165px
+                    font-size: 14px
+                    font-weight: 300

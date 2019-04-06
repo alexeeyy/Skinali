@@ -1,0 +1,40 @@
+.articles
+    padding: 130px 0 100px
+    & .title-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 65px
+        & h2
+            text-transform: none
+        & .read-all
+            text-decoration: underline
+            color: $btn-color-main
+    & ul
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        & li
+            height: fit-content
+            margin-bottom: 10px
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08)
+            &:hover h5
+                background-color: lighten($btn-color-main, 10%)
+                color: #fff
+            & .img-wrap
+                height: 200px
+                overflow: hidden
+                & img
+                    max-width: 100%
+            & h5
+                display: block
+                font-size: 18px
+                font-weight: 300
+                text-align: center
+                line-height: 80px
+                color: #000
+                transition: .3s
+            & .article-link
+                &:active h5
+                    transition: none
+                    background-color: $btn-color-main

@@ -1,0 +1,47 @@
+.header
+  .container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    min-width: 80px
+  &__menu-btn
+    width: 70px
+    height: 80px
+    background: url(../images/icons/menu.png) no-repeat center
+    border-left: 1px solid rgba(#510bba, 0.1)
+    border-right: 1px solid rgba(#510bba, 0.1)
+  & h3
+    margin-bottom: 5px
+  &__span
+    display: block
+    color: #6b6b6b
+    font-family: "Proxima Nova"
+    font-size: 14px
+    font-weight: 300
+    &-worktime
+      text-align: right
+    &-mail
+      text-align: right
+      text-decoration: underline
+  &__phone-number
+    margin-bottom: 4px
+    +semibold
+    color: #1c1c1c
+    font-size: 19px
+    font-weight: 400
+    text-transform: uppercase
+  &__counsel-btn
+    +semibold
+    width: 210px
+    line-height: 41px
+    background-color: #fff
+    border: 2px solid $btn-color-main
+    text-align: center
+    color: $btn-color-main
+    font-size: 12px
+    font-weight: 400
+    text-transform: uppercase
+    transition: all .3s
+    &:hover
+      background-color: $btn-color-main
+      color: #fff

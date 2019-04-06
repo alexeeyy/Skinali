@@ -1,0 +1,69 @@
+.catalog
+    padding: 100px 0
+    background-color: #f5f6f8
+    &__flex-wrap
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-bottom: 60px
+    &-item
+        position: relative
+        max-width: 570px
+        max-height: 130px
+        margin-bottom: 30px
+        box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1)
+        &:hover &-buttons
+            opacity: 1
+        &:nth-child(n+7)
+            margin-bottom: 0
+        & img
+            max-width: 100%
+        & .tag
+            position: absolute
+            top: 10px
+            left: 10px
+            padding: 10px
+            background-color: rgba($btn-color-main, 0.6)
+            color: #fff
+            font-size: 12px
+            text-transform: uppercase
+        &-buttons
+            display: flex
+            opacity: 0
+            position: absolute
+            right: 0
+            bottom: 0
+            transition: .3s
+            & .fit-on-btn,
+            & .order-btn,
+            & .like-btn
+                border: none
+                line-height: 30px
+                font-size: 11px
+                text-transform: uppercase
+                cursor: pointer
+                transition-duration: .1s
+                &:hover
+                    transform: scale(1.05)
+            & .fit-on-btn
+                width: 140px
+                background-color: #fff
+                color: lighten($btn-color-main, 10%)
+            & .order-btn
+                width: 75px
+                background-color: lighten($btn-color-main, 10%)
+                color: #fff
+            & .like-btn
+                width: 30px
+                height: 30px
+                background: #417cde url(../images/icons/like.png) no-repeat center
+                border: none
+    & .see-all
+        width: 350px
+        margin: 0 auto 20px
+        line-height: 70px
+    & .amount
+        display: block
+        text-align: center
+        font-size: 16px
+        font-weight: 300

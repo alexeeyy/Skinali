@@ -1,0 +1,83 @@
+.offer
+    padding-bottom: 50px
+    background-color: #f1f1f1
+    &-block
+        transform: translateY(-70px)
+        padding: 80px 190px 80px 80px
+        background: #fff url(../images/background/offer-bg.jpg) no-repeat right / contain
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
+.form
+    h2
+        margin-bottom: 20px
+    p
+        display: block
+        max-width: 700px
+        margin-bottom: 40px
+        font-size: 21px
+        font-weight: 300
+    & .flex-raw
+        display: flex
+        align-items: center
+        margin-bottom: 25px
+        &:last-child
+            margin-bottom: 0
+        & .flex-item
+            flex-basis: 33.33%
+            & label
+                display: block
+                margin-bottom: 15px
+            & select
+                width: 100%
+                height: 80px
+                border: 1px solid #dddddd
+                border-right-width: 0
+                outline: none
+            & input
+                width: 100%
+                height: 80px
+                padding: 0 30px
+                border: 1px solid #dddddd
+                font-size: 15px
+                font-weight: 300
+                outline: none
+        & .button
+            flex-basis: 33.33%
+            border: none
+            line-height: 80px
+
+    & .raw-1 .flex-item:nth-child(2) input
+        border-right-width: 0
+    & .raw-3 .flex-item:first-child input
+        border-right-width: 0
+    
+    & .raw-2 label
+        display: block
+        position: relative
+        margin-right: 90px
+        padding-left: 50px
+        cursor: pointer
+        user-select: none
+        line-height: 30px
+        &:hover .checkmark
+            background-color: lighten($btn-color-main, 30%)
+        & input
+            position: absolute
+            opacity: 0
+            cursor: pointer
+            height: 0
+            width: 0
+            &:checked ~ .checkmark
+                background-color: $btn-color-main
+        & .checkmark
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            height: 30px
+            width: 30px
+            border: 1px solid #dddddd
+            background-color: #fff
+            transition: .3s
+
+
+
