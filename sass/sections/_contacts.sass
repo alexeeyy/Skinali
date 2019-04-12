@@ -1,0 +1,40 @@
+.contacts
+    padding: 100px 0 85px
+    background-color: #f6f7f9
+    &-list
+        display: flex
+        justify-content: space-around
+        & li
+            position: relative
+            margin: 55px 0 45px
+            &::before
+                content: ""
+                position: absolute
+                top: -55px
+                left: 50%
+                transform: translateX(-50%)
+                width: 33px
+                height: 31px
+                background: url(../images/icons/contacts-sprite.png) no-repeat
+                background-position: 2px
+                
+            &:nth-child(2)::before
+                background-position: -400px
+            &:nth-child(3)::before
+                background-position: -800px
+    & iframe
+        margin-bottom: 85px
+    & .flex-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 580px
+        margin: 0 auto
+        & h1
+            text-transform: none
+            margin-bottom: 0
+        & a
+            color: #5a8de2
+            font-size: 24px
+            font-weight: 300
+            text-decoration: underline

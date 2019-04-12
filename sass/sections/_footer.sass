@@ -1,0 +1,63 @@
+.footer
+    padding: 40px 0
+    background-color: #262626
+    .container
+        display: flex
+        justify-content: space-between
+    &-copyright
+        & h3
+            margin-bottom: 10px
+            color: #fff
+        & p
+            margin-bottom: 40px
+            color: #fff
+            font-size: 14px
+            font-weight: 300
+        & span 
+            color: #767676
+            font-size: 14px
+            font-weight: 300
+
+    &-payments
+        display: flex
+        justify-content: space-between
+        width: 400px
+        & img
+                margin-top: -15px
+                border-style: none
+                width: 75px
+                height: 75px
+
+    &-contacts
+        text-align: right
+        & a
+            color: #fff
+        & .phone
+            margin-bottom: 10px
+            +semibold
+            font-size: 20px
+            font-weight: 400
+            text-transform: uppercase
+        & .mail
+            margin-bottom: 15px
+            font-weight: 300
+            line-height: 25px
+            text-decoration: underline
+        & .social-list
+            display: flex
+            justify-content: space-between
+            width: 104px
+            margin-left: auto
+            & li
+                width: 25px
+                height: 25px
+                transition: .2s
+                &:hover
+                    transform: scale(1.2)
+                & .social-btn
+                    height: 25px
+                    background: url(../images/icons/social-sprite.png) no-repeat
+                & .facebook
+                    background-position: -40px
+                & .vk
+                    background-position: -80px

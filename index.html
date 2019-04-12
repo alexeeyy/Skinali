@@ -26,6 +26,19 @@
       </div>
       <a href="javascript:void(0)" class="header__counsel-btn">Получить консультацию</a>
       </div>
+      <nav class="menu" id="menu" style="display: none;">
+          <div class="container">
+            <ul>
+                <li><a href="javascript:void(0)">Главная</a></li>
+                <li><a href="javascript:void(0)">Продукция</a></li>
+                <li><a href="javascript:void(0)">Каталог</a></li>
+                <li><a href="#catalog">Примеры работ</a></li>
+                <li><a href="javascript:void(0)">Примерка изображений</a></li>
+                <li><a href="javascript:void(0)">Стоимость дилерам</a></li>
+                <li><a href="#about-manufacture">О скинали</a></li>
+            </ul>
+          </div>
+      </nav>
   </header> 
    <section class="kitchen">
        <div class="container">
@@ -53,11 +66,11 @@
                         </div>
                         <div class="flex-item">
                             <label for="width-cm">Ширина, см</label>
-                            <input type="text" id="width-cm">
+                            <input type="text" id="width-cm" required>
                         </div>
                         <div class="flex-item">
                             <label for="height-cm">Высота, см</label>
-                            <input type="text" id="height-cm">
+                            <input type="text" id="height-cm" required>
                         </div>
                     </div>
                     <div class="flex-raw raw-2">
@@ -72,10 +85,10 @@
                     </div>
                     <div class="flex-raw raw-3">
                         <div class="flex-item">
-                            <input type="text" placeholder="Ваше имя">
+                            <input type="text" placeholder="Ваше имя" required>
                         </div>
                         <div class="flex-item">
-                            <input type="tel" placeholder="Ваш телефон">
+                            <input type="tel" placeholder="Ваш телефон" required>
                         </div>
                         <input type="submit" class="button">
                     </div>
@@ -88,37 +101,37 @@
         <h1>НАШИ ПРЕИМУЩЕСТВА</h1>
         <div class="flex-wrap">
             <figure>
-                <img src="images/icons/advantage-1.png" alt="Бесплатный дизайн-макет">
+                <img src="images/advantages/advantage-1.png" alt="Бесплатный дизайн-макет">
                 <figcaption>
                     <h5>Бесплатный<br> дизайн-макет</h5>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/icons/advantage-2.png" alt="Пожизненная гарантия">
+                <img src="images/advantages/advantage-2.png" alt="Пожизненная гарантия">
                 <figcaption>
                     <h5>Пожизненная<br> гарантия</h5>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/icons/advantage-3.png" alt="Большой каталог изображений">
+                <img src="images/advantages/advantage-3.png" alt="Большой каталог изображений">
                 <figcaption>
                     <h5>Большой каталог<br> изображений</h5>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/icons/advantage-4.png" alt="100% соблюдение сроков">
+                <img src="images/advantages/advantage-4.png" alt="100% соблюдение сроков">
                 <figcaption>
                     <h5>100% соблюдение<br> сроков</h5>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/icons/advantage-5.png" alt="Собственное производство">
+                <img src="images/advantages/advantage-5.png" alt="Собственное производство">
                 <figcaption>
                     <h5>Собственное<br> производство</h5>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/icons/advantage-6.png" alt="Минимальная цена в городе от 1600 р метр">
+                <img src="images/advantages/advantage-6.png" alt="Минимальная цена в городе от 1600 р метр">
                 <figcaption>
                     <h5>Минимальная цена в городе<br> от 1600 р метр</h5>
                 </figcaption>
@@ -126,7 +139,7 @@
         </div>
         </div>
    </section>
-   <section class="catalog">
+   <section id="catalog" class="catalog">
        <div class="container">
            <h1>КАТАЛОГ СКИНАЛИ</h1>
            <div class="catalog__flex-wrap">
@@ -249,7 +262,7 @@
            </ul>
        </div>
    </section>
-   <section class="categories">
+   <section id="categories" class="categories">
        <div class="container">
            <h1>ЦЕНЫ И ВИДЫ скинали</h1>
            <div class="categories-wrap">
@@ -401,5 +414,120 @@
            </div>
        </div>
    </section>
+   <section class="feedback">
+       <div class="container">
+           <h1>Отзывы наших клиентов</h1>
+           <div class="feedback-wrap">
+                <figure>
+                    <div class="client-feedback">
+                        Девушка подобрала лучший вариант для меня,<br> без первого взноса и с минимальной<br> переплатой.<br> 
+                        У Банка очень много способов погашения, и удобное мобильное приложение.
+                    </div>
+                    <img src="images/feedback/client-1.png" alt="Клиент">
+                    <figcaption>
+                        <span>Екатерина Иванова<br> Москва</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="client-feedback">
+                        Очень часто мы сталкиваемся с недопониманием со стороны сотрудников банка, и иной раз идти не хочется... В очередной раз "навешают лапши науши" икультурно пошлют...
+                    </div>
+                    <img src="images/feedback/client-2.png" alt="Клиент">
+                    <figcaption>
+                        <span>Екатерина Иванова<br> Москва</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="client-feedback">
+                        Хочу рассказать об опыте знакомства с Почта банком. Мне срочно были нужны деньги, а времени на сбор документов для кредита не было.   Подруга посоветовала обратиться в офис Почта банка на ул. Тухачевского. 
+                    </div>
+                    <img src="images/feedback/client-3.png" alt="Клиент">
+                    <figcaption>
+                        <span>Екатерина Иванова<br> Москва</span>
+                    </figcaption>
+                </figure>
+            </div>
+       </div>
+   </section>
+   <section class="discount-calc">
+       <div class="container">
+            <div class="calc-block">
+                <form action="">
+                    <h2>ИЩИТЕ ГДЕ ДЕШЕВЛЕ И ЛУЧШЕ?</h2>
+                    <p>Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле, укажите ее - и мы вам пересчитаем заказ с максимальной скидкой</p>
+                    <div class="flex-raw raw-1">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="text" placeholder="Ваш телефон" required>
+                        <input type="text" placeholder="Ваша цена" required>
+                    </div>
+                    <div class="flex-raw raw-2">
+                        <input type="submit" class="button" value="Получить расчет со скидкой">
+                        <span>Ваши данные надежно защищены. 
+                        Отправление заявки ни к чему не обязывает.</span>
+                    </div>
+                </form>
+            </div>
+       </div>
+   </section>
+   <section id="manufacture" class=" manufacture">
+       <div class="container">
+           <h1>О производстве</h1>
+           <figure>
+               <div class="img-wrap">
+                    <img src="images/manufacture/manufacture-figure.jpg" alt="">
+               </div>
+               <figcaption>
+                   <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br>
+                        <br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+               </figcaption>
+           </figure>
+       </div>
+   </section>
+   <section class="contacts">
+       <div class="container">
+           <h1>Контакты</h1>
+           <ul class="contacts-list">
+               <li>+7 499 123-45-67</li>
+               <li>Каширинское шоссе, д. 23, офис 345</li>
+               <li>5404177@mail.ru</li>
+           </ul>
+       </div>
+       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac65230329a1f586022e9cd076411f599ab20df594140b4aec10436f9e0be51ed&amp;source=constructor" width="100%" height="410" frameborder="0"></iframe>
+       <div class="flex-wrap">
+            <h1>Остались вопросы?</h1>
+            <a href="javascript:void(0)">Задайте их менеджеру</a>
+       </div>
+   </section>
+   <footer class="footer">
+       <div class="container">
+           <div class="footer-copyright">
+               <h3>Фабрика скинали №1</h3>
+               <p>ведущий производитель скинали</p>
+               <span>© Фабрика скинали №1</span>
+           </div>
+           <div class="footer-payments">
+               <img src="images/payments/webmoney-pay-logo.svg" alt="">
+               <img src="images/payments/yandex-pay-logo.svg" alt="">
+               <img src="images/payments/master-card-logo.svg" alt="">
+               <img src="images/payments/visa-pay-logo.svg" alt="">
+           </div>
+           <div class="footer-contacts">
+               <a href="tel: +7499123-45-67" class="phone">+7 499 123-45-67</a>
+               <a href="mailto: 5404177@mail.ru" class="mail">5404177@mail.ru</a>
+               <ul class="social-list">
+                   <li><a href="javascript:void(0)" class="social-btn twitter"></a></li>
+                   <li><a href="javascript:void(0)" class="social-btn facebook"></a></li>
+                   <li><a href="javascript:void(0)" class="social-btn vk"></a></li>
+               </ul>
+           </div>
+       </div>
+   </footer>
+   <script src="scripts/jquery-3.3.1.min.js"></script>
+   <script src="scripts/jquery-migrate-1.4.1.min.js"></script>
+   <script src="scripts/index.js"></script>
 </body>
 </html>

@@ -1,4 +1,10 @@
 .header
+  z-index: 99
+  position: fixed
+  left: 0
+  top: 0
+  background-color: #fff
+  width: 100%
   .container
     display: flex
     align-items: center
@@ -45,3 +51,22 @@
     &:hover
       background-color: $btn-color-main
       color: #fff
+
+  & .menu
+    position: absolute
+    top: 80px
+    left: 0
+    width: 100%
+    padding: 20px 0
+    background-color: #4370ce
+    & ul
+      display: flex
+      justify-content: space-between
+      width: 100%
+      & li:hover a
+        text-decoration: underline
+      & li a
+        color: #fff
+        font-size: 17px
+        font-weight: 300
+        text-transform: uppercase
